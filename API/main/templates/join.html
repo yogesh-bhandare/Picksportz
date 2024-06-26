@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+    
+{% block title %}Join{% endblock %}
+    
+{% block content %}
+
+      <section class="section-join">
+        <div class="container text-center common-title fw-bold">
+            <h2 class="common-heading">Join nearby squads &<br>  start enjoying with PickSportz!  </h2>
+            <hr class="w-25 mx-auto">
+        </div>
+      </section>
+
+<div class="container d-flex">
+    <div class="container d-flex">
+        {% for team in organize_team %}
+            <div class="card p-2 mx-auto " style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ team.turf_name }} <hr> </h5>
+                    <p class="p-0 m-0"><b>Name:</b> {{ team.first_name }} {{ team.last_name }}</p>
+                    <p class="p-0 m-0"><b>Contact no.:</b> {{ team.contact_number }}</p>
+                    <p class="p-0 m-0"><b>Space left:</b> {{ team.teammates_count }}</p>
+                    <p class="p-0 m-0 mb-3"><b>Date & time:</b> {{ team.datetime }}</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query={{ team.location }}" class="btn btn-primary">Location</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+
+    </div>
+
+    {% endblock %}
+
+
+

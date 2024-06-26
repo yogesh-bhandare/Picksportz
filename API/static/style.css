@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'urbanist', sans-serif;
+}
+
+:root{
+    --bs-dark-color : #1a1d20;
+    --bs-dark-primary: #1c1c1c;
+    --bs-main-color : #fff;
+    --bs-primary-color : #c6c6c6;
+    --secondary-color : #29a9fd;
+    --bs-supporting-color : #C850C0;
+    --bs-important-color : #42f548;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: sans-serif;
+    color: var( --bs-dark-color);
+}
+
+h1{
+    font-size: 3.8rem;
+    color: #42f548;
+
+}
+
+h2{
+    line-height: 5rem;
+    font-weight: 600;
+    font-size: 5rem;
+}
+
+p{
+    margin : 0;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var( --bs-dark-color);
+    letter-spacing: 0.07rem;
+    line-height: 1.55rem;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+li{
+    list-style: none;
+}
+
+button,a{
+    font-size : 1.15rem !important;
+    letter-spacing: 0.03;
+    word-spacing: .1rem;
+    color: var(--bs-main-color);
+}
+
+.background-radial-gradient {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+  }
+
+  .bg-glass {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(25px);
+  }
+
+.common-heading{
+    font-size: 2.8rem;
+    font-weight: 500;
+    letter-spacing: 0.01rem !important;
+}
+
+.common-title{
+    margin-bottom: 4.2rem;
+}
+
+
+
+.nav-link{
+    color: var(--bs-main-color);
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: var(--secondary-color) !important;
+}
+
+
+
+/*hero section starts */
+.hero-section .container{
+    display: grid;
+    place-content: center;
+    height: inherit;
+
+}
+
+.bg-main{
+    height: 85vh;
+    position: relative;
+}
+
+.bg-color{
+    background-color: #242426;
+}
+.bg-color1{
+    background-color: #242426;
+}
+.text-light-grey{
+    color: var(--bs-primary-color);
+}
+.bg-theme{
+    color: var( --bs-supporting-color);
+    background-image: none!important;
+}
+
+.hero-image-section{
+    width: 70%;
+    border-radius: 2rem;
+}
+
+.custom-shape-divider-bottom-1712218056 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1712218056 svg {
+    position: relative;
+    display: block;
+    width: calc(105% + 1.3px);
+    height: 109px;
+}
+
+.custom-shape-divider-bottom-1712218056 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+/*Services section                 start */
+
+.services-section{
+    padding: 6rem 0 3rem 0 !important;
+}
+
+.icon-span{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--secondary-color);
+    color: var(--bs-main-color);
+}
+
+.card-box:hover{
+    box-shadow: rgba(45, 98, 70, 0.5) 0 8px 24px;
+}
+
+.more-section-info{
+    background-image: url(images\pexels-photo-918798.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    padding: 1rem 0 ;
+    overflow: hidden;
+    
+}
+
+.img-fluid{
+    width: 80%;
+    border-radius: 5rem;
+    padding: 50px;
+}
+
+.contact-section{
+    position: relative;
+}
+
+.custom-shape-divider-top-1712830712 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1712830712 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 135px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1712830712 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.contact-section .common-title{
+    padding-top: 5rem;
+}
+
+.contact-section .form-section{
+    width: 50%;
+}
+
+.cc{
+    color: greenyellow;
+}
+
+
+.section-join{
+    padding: 3rem 0 1rem 0 ;
+}
+
+
+
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+

@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+
+{% block title %}Organize{% endblock %}
+
+{% block content %}
+<!-- Section: Design Block -->
+<section class="background-radial-gradient overflow-hidden">
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+        <div class="row gx-lg-5 align-items-center mb-5">
+            <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+                <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+                    Organize Your Team <br />
+                    <span style="color: hsl(119, 99%, 59%)">with PickSportz</span>
+                </h1>
+                <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+                    Organizing team games is made easy with our platform. Start by
+                    setting a suitable date and time, ensuring maximum participation.
+                    Select a convenient location and specify the rules clearly for
+                    fair play. Communication is key, so keep your teammates informed
+                    about all the details.
+                </p>
+            </div>
+
+            <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+                <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+                <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+                <div class="card bg-glass">
+                    <div class="card-body px-4 py-5 px-md-5">
+                        <form method="post">
+                            {% csrf_token %}
+                            <!-- 2 column grid layout with text inputs for the first and last names -->
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div data-mdb-input-init class="form-outline">
+                                        <label class="form-label" for="form3Example1">First name</label>
+                                        <input name="first_name" type="text" id="form3Example1" class="form-control" required />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div data-mdb-input-init class="form-outline">
+                                        <label class="form-label" for="form3Example2">Last name</label>
+                                        <input name="last_name" type="text" id="form3Example2" class="form-control" required />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Contact number input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="form3Example3">Contact number</label>
+                                <input name="contact_number" type="tel" id="form3Example3" class="form-control" />
+                            </div>
+
+                            <!-- Turf name input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="form3Example3">Enter turf name</label>
+                                <input name="turf_name" type="text" id="form3Example3" class="form-control" required />
+                            </div>
+
+                            <!-- Location input with button to open Google Maps -->
+                            <div data-mdb-input-init class="form-group form-outline mb-4">
+                                <label for="form3Example4">Location</label>
+                                <div class="input-group">
+                                    <input name="location" type="text" id="form3Example4" class="form-control" placeholder="Enter location" required />
+                                    <a href="https://www.google.com/maps/search/nearby+turf" target="_blank" class="btn btn-primary">Open Google Maps</a>
+                                </div>
+                            </div>
+
+                            <!-- Number of teammates input -->
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div data-mdb-input-init class="form-outline">
+                                        <label class="form-label" for="form3Example1">Number of teammates</label>
+                                        <input name="teammates_count" type="text" id="form3Example1" class="form-control" required />
+                                    </div>
+                                </div>
+
+                                <!-- Date and time input -->
+                                <div class="col-md-6 mb-4">
+                                    <div data-mdb-input-init class="form-outline">
+                                        <div class="form-group">
+                                            <label for="datetimepicker">Select Date and Time:</label>
+                                            <input name="datetime" type="datetime-local" id="datetimepicker" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary btn-block mb-4">Submit and Organize</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
