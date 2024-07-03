@@ -63,7 +63,7 @@ To start using Picksportz, follow these simple steps:
 
 Thank you for your interest in Picksportz. We are committed to making sports more accessible and enjoyable for everyone. Let's play!
 
-# Django API Project Setup
+# Picksportz Project Setup
 
 This repository contains a Django API project setup guide with instructions on installing Virtualenv, creating a virtual environment outside the API project directory, installing Django and Django Rest Framework, and running the Django app.
 
